@@ -1,8 +1,8 @@
-# PhoneBook app
+# SlotBooking app
+https://656b7b60db89ad732b415f29--spontaneous-horse-98c846.netlify.app/
+This is a Web application based on Reactjs and Chakra UI which helps the user book slots with different Times and dates.
+![slbp](https://github.com/HARSHAL-AP/VengageAIassignement/assets/100954039/aa3cd999-bac3-4722-a155-53e3fc85aa75)
 
-This is a Web application based on Reactjs and Chakra UI which helps the user manage their Phone numbers and their contact information
-![pb](https://github.com/HARSHAL-AP/VengageAIassignement/assets/100954039/e2ab8d0d-1257-4f1e-ab46-0db17242d792)
-![pb2](https://github.com/HARSHAL-AP/VengageAIassignement/assets/100954039/2f3544ca-a1f2-42a1-9388-33398c349b15)
 
 ## Features
 
@@ -23,8 +23,4 @@ This is a Web application based on Reactjs and Chakra UI which helps the user ma
 - **Database**:MONGODB
 
 
-## Getting Started
 
-1. Clone the repository: `(https://github.com/HARSHAL-AP/cuvette-assignment-frontend.git)](https://github.com/HARSHAL-AP/VengageAIassignement)`
-2. Install frontend dependencies: `npm install`
-3. Start the frontend development server: `npm start`
