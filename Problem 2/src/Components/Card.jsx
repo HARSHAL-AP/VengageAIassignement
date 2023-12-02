@@ -23,7 +23,7 @@ import { edit,remove} from "../features/contactSlice";
 import { useDispatch, useSelector } from "react-redux";
 import axios from 'axios';
 
-const Card = ({ user, onEdit, onDelete }) => {
+const Card = ({ user}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false); // Added state for editing mode
   const [editedUser, setEditedUser] = useState(user); // Added state for edited user
@@ -40,10 +40,29 @@ const Card = ({ user, onEdit, onDelete }) => {
   };
 
   const handleSaveEdit = () => {
-    setIsEditing(false);
-    setShowEditPopup(false);
-    // Perform save edit logic and update user details in the parent component
-    onEdit(editedUser);
+    
+    axios
+     .patch(`https://tired-mite-tights.cyclic.app/contactinfo/update/${editedUser._id}`,editedUser ,{
+       headers: {
+         authorization: token,
+       },
+     })
+     .then((response) => {
+        console.log(response.data.data)
+       dispatch(edit(editedUser))
+       
+     })
+     .catch((error) => {
+       console.error("Error:", error);
+     });  
+    
+   
+
+
+   setIsEditing(false);
+   setShowEditPopup(false);
+
+ 
   };
 
   const handleCancelEdit = () => {
