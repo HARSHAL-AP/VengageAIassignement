@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Allroutes from './Pages/Allroutes';
+import SlotBooking from './Components/SlottBooking';
 
 function App() {
   return (
     <div className="App">
-     <Allroutes/>
+     <SlotBooking/>
     </div>
   );
 }
